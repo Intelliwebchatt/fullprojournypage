@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Latest AI insights and updates - intelliAI Pro Journey Blog">
+    <meta name="description" content="Latest AI Insights and updates - intelliAI Pro Journey Blog">
     <title>Blog - intelliAI Pro Journey</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../styles/blog.css">
@@ -14,52 +14,92 @@
             <div class="logo">intelliAI Pro Journey</div>
             <div class="nav-links">
                 <a href="../../index.html">Home</a>
-                <a href="../information/basics.html">AI Information</a>
-                <a href="../services/pro-series.html">Services</a>
-                <a href="#" class="active">Blog</a>
-                <a href="../contact.html">Contact Us</a>
+                <div class="dropdown">
+                    <a href="../information/basics.html">AI Information</a>
+                    <div class="dropdown-content">
+                        <a href="../information/basics.html">AI Basics</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="../services/digital-marketing.html">Services</a>
+                    <div class="dropdown-content">
+                        <a href="../services/digital-marketing.html">Digital Marketing</a>
+                        <a href="../services/pro-series.html">Pro Series</a>
+                        <a href="../services/seo.html">SEO Services</a>
+                        <a href="../services/web-development.html">Web Development</a>
+                    </div>
+                </div>
+                <a href="index.html" class="active">Blog</a>
+                <a href="../contact/index.html">Contact Us</a>
             </div>
             <div class="menu-btn">☰</div>
         </nav>
     </header>
 
     <main>
-        <section class="page-header">
-            <h1>AI Insights & Updates</h1>
-            <p>Stay informed with the latest in AI technology and applications</p>
+        <section class="blog-hero">
+            <div class="container">
+                <h1>AI Insights & Industry Updates</h1>
+                <p>Explore the latest developments in AI technology, best practices, and success stories</p>
+            </div>
         </section>
 
-        <section class="blog-grid">
+        <section class="blog-featured">
             <div class="container">
-                <article class="blog-card">
-                    <img src="../../images/ai-trends.jpg" alt="AI Trends" class="blog-image">
-                    <div class="blog-content">
-                        <h2>The Future of AI in 2024</h2>
-                        <p class="blog-meta">March 15, 2024 | AI Trends</p>
-                        <p>Exploring the most significant AI developments and their impact on businesses and society.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
+                <h2>Featured Articles</h2>
+                <div class="featured-grid">
+                    <article class="featured-post">
+                        <div class="post-content">
+                            <span class="post-category">AI Strategy</span>
+                            <h3>How AI is Transforming Small Business Operations in 2024</h3>
+                            <p>Discover the practical applications of AI that are helping small businesses compete in today's market...</p>
+                            <a href="posts/ai-small-business-2024.html" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
 
-                <article class="blog-card">
-                    <img src="../../images/chatgpt.jpg" alt="ChatGPT" class="blog-image">
-                    <div class="blog-content">
-                        <h2>Maximizing ChatGPT for Business</h2>
-                        <p class="blog-meta">March 10, 2024 | Business</p>
-                        <p>Learn how to leverage ChatGPT to enhance your business operations and customer service.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
+                    <article class="featured-post">
+                        <div class="post-content">
+                            <span class="post-category">Technology</span>
+                            <h3>The Rise of AI-Powered Digital Marketing Tools</h3>
+                            <p>Explore how artificial intelligence is revolutionizing digital marketing strategies...</p>
+                            <a href="posts/ai-marketing-tools.html" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <article class="blog-card">
-                    <img src="../../images/ai-ethics.jpg" alt="AI Ethics" class="blog-image">
-                    <div class="blog-content">
-                        <h2>AI Ethics and Responsibility</h2>
-                        <p class="blog-meta">March 5, 2024 | Ethics</p>
-                        <p>Understanding the ethical considerations in AI development and implementation.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
+        <section class="blog-latest">
+            <div class="container">
+                <h2>Latest Posts</h2>
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <div class="post-content">
+                            <span class="post-category">Tutorial</span>
+                            <h3>Getting Started with ChatGPT for Business</h3>
+                            <p>A step-by-step guide to leveraging ChatGPT for your business needs...</p>
+                            <a href="posts/chatgpt-business-guide.html" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-content">
+                            <span class="post-category">Industry News</span>
+                            <h3>Top AI Trends to Watch in 2024</h3>
+                            <p>Stay ahead of the curve with these emerging AI trends...</p>
+                            <a href="posts/ai-trends-2024.html" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-content">
+                            <span class="post-category">Case Study</span>
+                            <h3>AI Implementation Success Stories</h3>
+                            <p>Real-world examples of successful AI integration in various industries...</p>
+                            <a href="posts/ai-success-stories.html" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
@@ -71,8 +111,9 @@
                     <h4>Quick Links</h4>
                     <a href="../../index.html">Home</a>
                     <a href="../information/basics.html">AI Information</a>
-                    <a href="../services/pro-series.html">Services</a>
-                    <a href="../contact.html">Contact Us</a>
+                    <a href="../services/digital-marketing.html">Services</a>
+                    <a href="index.html">Blog</a>
+                    <a href="../contact/index.html">Contact Us</a>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
@@ -94,6 +135,8 @@
             </div>
         </div>
     </footer>
-    <script src="../../scripts/navigation.js"></script>
+
+    <script src="../../navigation.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>
