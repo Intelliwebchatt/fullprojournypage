@@ -1,0 +1,116 @@
+/* Services Page Styles */
+.pricing-section {
+    padding: 4rem 2rem;
+    background-color: var(--light-blue);
+}
+
+.price-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.price {
+    font-size: 3rem;
+    color: var(--medium-blue);
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.price-features {
+    margin: 2rem 0;
+}
+
+.price-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-features li {
+    margin: 0.8rem 0;
+    color: var(--gray);
+}
+
+.services-section {
+    padding: 4rem 2rem;
+    background-color: var(--light-blue);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.service-features li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.service-features li::before {
+    content: "✓";
+    color: var(--medium-blue);
+    position: absolute;
+    left: 0;
+}
+
+.cta-section {
+    padding: 4rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.cta-section h2 {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: var(--medium-blue);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 2rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    background-color: var(--dark-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        margin-bottom: 1rem;
+    }
+}
