@@ -41,11 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Set active navigation link based on current page
-    const currentPage = window.location.pathname;
+    const currentPath = window.location.pathname;
     const navItems = document.querySelectorAll('.nav-links a');
     
     navItems.forEach(item => {
-        if (currentPage.endsWith(item.getAttribute('href'))) {
+        const href = item.getAttribute('href');
+        // Check if the current path contains the href (for nested pages)
+        if (currentPath.includes(href) && href !== '/') {
             item.classList.add('active');
             // If in dropdown, also highlight parent
             const parentDropdown = item.closest('.dropdown');
