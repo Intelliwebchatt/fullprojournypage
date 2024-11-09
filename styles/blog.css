@@ -1,142 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Latest AI Insights and updates - intelliAI Pro Journey Blog">
-    <title>Blog - intelliAI Pro Journey</title>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../styles/blog.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">intelliAI Pro Journey</div>
-            <div class="nav-links">
-                <a href="../../index.html">Home</a>
-                <div class="dropdown">
-                    <a href="../information/basics.html">AI Information</a>
-                    <div class="dropdown-content">
-                        <a href="../information/basics.html">AI Basics</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="../services/digital-marketing.html">Services</a>
-                    <div class="dropdown-content">
-                        <a href="../services/digital-marketing.html">Digital Marketing</a>
-                        <a href="../services/pro-series.html">Pro Series</a>
-                        <a href="../services/seo.html">SEO Services</a>
-                        <a href="../services/web-development.html">Web Development</a>
-                    </div>
-                </div>
-                <a href="index.html" class="active">Blog</a>
-                <a href="../contact/index.html">Contact Us</a>
-            </div>
-            <div class="menu-btn">☰</div>
-        </nav>
-    </header>
+/* Blog Page Specific Styles */
+.blog-hero {
+    background: linear-gradient(135deg, var(--dark-blue), var(--medium-blue));
+    color: var(--white);
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+}
 
-    <main>
-        <section class="blog-hero">
-            <div class="container">
-                <h1>AI Insights & Industry Updates</h1>
-                <p>Explore the latest developments in AI technology, best practices, and success stories</p>
-            </div>
-        </section>
+.blog-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
 
-        <section class="blog-featured">
-            <div class="container">
-                <h2>Featured Articles</h2>
-                <div class="featured-grid">
-                    <article class="featured-post">
-                        <div class="post-content">
-                            <span class="post-category">AI Strategy</span>
-                            <h3>How AI is Transforming Small Business Operations in 2024</h3>
-                            <p>Discover the practical applications of AI that are helping small businesses compete in today's market...</p>
-                            <a href="posts/ai-small-business-2024.html" class="read-more">Read Article →</a>
-                        </div>
-                    </article>
+.blog-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
 
-                    <article class="featured-post">
-                        <div class="post-content">
-                            <span class="post-category">Technology</span>
-                            <h3>The Rise of AI-Powered Digital Marketing Tools</h3>
-                            <p>Explore how artificial intelligence is revolutionizing digital marketing strategies...</p>
-                            <a href="posts/ai-marketing-tools.html" class="read-more">Read Article →</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+.blog-featured {
+    padding: 4rem 2rem;
+    background-color: var(--light-blue);
+}
 
-        <section class="blog-latest">
-            <div class="container">
-                <h2>Latest Posts</h2>
-                <div class="posts-grid">
-                    <article class="post-card">
-                        <div class="post-content">
-                            <span class="post-category">Tutorial</span>
-                            <h3>Getting Started with ChatGPT for Business</h3>
-                            <p>A step-by-step guide to leveraging ChatGPT for your business needs...</p>
-                            <a href="posts/chatgpt-business-guide.html" class="read-more">Read Article →</a>
-                        </div>
-                    </article>
+.featured-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
-                    <article class="post-card">
-                        <div class="post-content">
-                            <span class="post-category">Industry News</span>
-                            <h3>Top AI Trends to Watch in 2024</h3>
-                            <p>Stay ahead of the curve with these emerging AI trends...</p>
-                            <a href="posts/ai-trends-2024.html" class="read-more">Read Article →</a>
-                        </div>
-                    </article>
+.featured-post {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
 
-                    <article class="post-card">
-                        <div class="post-content">
-                            <span class="post-category">Case Study</span>
-                            <h3>AI Implementation Success Stories</h3>
-                            <p>Real-world examples of successful AI integration in various industries...</p>
-                            <a href="posts/ai-success-stories.html" class="read-more">Read Article →</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
+.featured-post:hover {
+    transform: translateY(-5px);
+}
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <a href="../../index.html">Home</a>
-                    <a href="../information/basics.html">AI Information</a>
-                    <a href="../services/digital-marketing.html">Services</a>
-                    <a href="index.html">Blog</a>
-                    <a href="../contact/index.html">Contact Us</a>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: info@intelliaiprojourney.com</p>
-                    <p>Phone: (123) 456-7890</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-icon">FB</a>
-                        <a href="#" class="social-icon">TW</a>
-                        <a href="#" class="social-icon">LI</a>
-                        <a href="#" class="social-icon">YT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 intelliAI Pro Journey. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+.post-content {
+    padding: 2rem;
+}
 
-    <script src="../../navigation.js"></script>
-    <script src="../../script.js"></script>
-</body>
-</html>
+.post-category {
+    display: inline-block;
+    background: var(--light-blue);
+    color: var(--medium-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-content h3 {
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: var(--medium-blue);
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--dark-blue);
+}
+
+.blog-latest {
+    padding: 4rem 2rem;
+}
+
+.posts-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.post-card {
+    background: var(--white);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .posts-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-hero {
+        padding: 6rem 1rem 3rem;
+    }
+    
+    .blog-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .featured-grid,
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+}
