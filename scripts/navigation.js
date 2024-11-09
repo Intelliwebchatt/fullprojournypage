@@ -8,23 +8,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mobile Dropdown Toggle
-    if (window.innerWidth <= 768) {
-        const dropdowns = document.querySelectorAll('.dropdown > a');
-        dropdowns.forEach(dropdown => {
-            dropdown.addEventListener('click', (e) => {
+    const dropdowns = document.querySelectorAll('.dropdown > a');
+    
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
                 e.preventDefault();
                 const parent = dropdown.parentElement;
+                
                 // Close all other dropdowns
                 dropdowns.forEach(other => {
                     if (other !== dropdown) {
                         other.parentElement.classList.remove('active');
                     }
                 });
+                
                 // Toggle current dropdown
                 parent.classList.toggle('active');
-            });
+            }
         });
-    }
+    });
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
@@ -46,4 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.add('active');
             // If in dropdown, also highlight parent
             const parentDropdown = item.closest('.dropdown');
-            if (parentDrop
+            if (parentDropdown) {
+                parentDropdown.querySelector('> a').classList.add('active');
+            }
+        }
+    });
+});
